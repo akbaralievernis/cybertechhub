@@ -102,30 +102,24 @@
 </head>
 <body>
     <h1>Тогуз Коргоол</h1>
-    
-    <div class="player-info">
+     <div class="player-info">
         <img src="photo_2024-09-16_21-46-27.jpg" alt="Player 1 Avatar" class="avatar">
         <span id="player1-name">Оюнчу 1</span>
-    </div>
-    
+    </div> 
     <div class="scores">
         <span id="player1-score">Очко Оюнчу 1: 0</span> |
         <span id="player2-score">Очко Оюнчу 2: 0</span>
     </div>
-
-    <div id="board" class="board"></div>
-
-    <div class="timer">Оюн убактысы: <span id="time">30</span> сек</div>
-
-    <div class="game-mode">
+ <div id="board" class="board"></div>
+ <div class="timer">Оюн убактысы: <span id="time">30</span> сек</div>
+ <div class="game-mode">
         <label for="gameMode">Оюн режими:</label>
         <select id="gameMode">
             <option value="bot">Компьютер менен</option>
             <option value="two-players">Эки оюнчу</option>
         </select>
     </div>
-
-    <div class="skins">
+ <div class="skins">
         <label for="skin-select">Доска стилин тандаңыз:</label>
         <select id="skin-select">
             <option value="classic">Классикалык</option>
@@ -133,21 +127,17 @@
             <option value="nature">Табият</option>
         </select>
     </div>
-
-    <div>
-        <button onclick="restartGame()">Жаңыртуу</button>
+<div>
+       <button onclick="restartGame()">Жаңыртуу</button>
     </div>
-
-    <div class="statistics">
+ <div class="statistics">
         <h3>Оюнчу статистикасы:</h3>
         <p>Оюндар: <span id="games-played">0</span></p>
         <p>Жеңиштер: <span id="games-won">0</span></p>
     </div>
-
-    <audio id="move-sound" src="move.mp3" preload="auto"></audio>
+<audio id="move-sound" src="move.mp3" preload="auto"></audio>
     <audio id="win-sound" src="win.mp3" preload="auto"></audio>
-
-    <script>
+ <script>
         let board = [
             [9, 9, 9, 9, 9, 9, 9, 9, 9],
             [9, 9, 9, 9, 9, 9, 9, 9, 9]
@@ -160,8 +150,7 @@
         let gamesWon = [0, 0];
         let moveTime = 30; // 30 секунд на ход
         let timer;
-
-        // Функция для создания доски
+  // Функция для создания доски
         function createBoard() {
             const boardElement = document.getElementById('board');
             boardElement.innerHTML = '';
@@ -177,8 +166,7 @@
                 }
             }
         }
-
-        // Таймер для хода
+ // Таймер для хода
         function startTimer() {
             clearInterval(timer);
             moveTime = 30;
@@ -194,8 +182,7 @@
                 }
             }, 1000);
         }
-
-        // Функция для выполнения хода
+   // Функция для выполнения хода
         function makeMove(player, holeIndex) {
             if (player !== currentPlayer) {
                 alert("Азыр сиздин кезегиңиз эмес!");
@@ -239,8 +226,7 @@
             startTimer();
             checkGameOver();
         }
-
-        // Функция для хода бота
+ // Функция для хода бота
         function botMove() {
             let bestMove = -1;
             if (difficulty === 'easy') {
@@ -250,8 +236,7 @@
             }
             makeMove(1, bestMove);
         }
-
-        // Обновление доски и счета
+     // Обновление доски и счета
         function updateBoard() {
             createBoard();
             document.getElementById('player1-score').textContent = `Очко Оюнчу 1: ${scores[0]}`;
@@ -259,8 +244,7 @@
             document.getElementById('games-played').textContent = gamesPlayed;
             document.getElementById('games-won').textContent = gamesWon[currentPlayer];
         }
-
-        // Проверка на конец игры
+  // Проверка на конец игры
         function checkGameOver() {
             if (scores[0] >= 81 || scores[1] >= 81) {
                 clearInterval(timer);
@@ -269,8 +253,7 @@
                 restartGame();
             }
         }
-
-        // Функция для перезапуска игры
+  // Функция для перезапуска игры
         function restartGame() {
             board = [
                 [9, 9, 9, 9, 9, 9, 9, 9, 9],
@@ -284,19 +267,16 @@
             updateBoard();
             startTimer();
         }
-
-        // Воспроизведение звука
+ // Воспроизведение звука
         function playSound(soundId) {
             document.getElementById(soundId).play();
         }
-
-        // Смена скина доски
+// Смена скина доски
         document.getElementById('skin-select').addEventListener('change', function() {
             const selectedSkin = this.value;
             document.body.style.backgroundImage = `url(${selectedSkin}.jpg)`;
         });
-
-        // Запуск игры
+  // Запуск игры
         createBoard();
         startTimer();
     </script>
