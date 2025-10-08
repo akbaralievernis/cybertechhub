@@ -1,1 +1,535 @@
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CyberTech Hub — Играй. Учись. Развивайся.</title><style>:root{--bg:#0b0f19;--text:#e0e0ff;--neon-blue:#00e0ff;--neon-pink:#ff007f;--card-bg:#131a2a}*,::after,::before{box-sizing:border-box}body{font-family:'Roboto',sans-serif;background-color:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:0;scroll-behavior:smooth}h1,h2,h3{font-family:'Orbitron',sans-serif;margin-bottom:1rem}h1{font-size:4rem;color:white;text-shadow:0 0 20px var(--neon-blue)}h2{text-align:center;font-size:2.5rem;margin-bottom:2rem;color:var(--neon-blue);text-shadow:0 0 10px rgba(0,224,255,.3)}h3{font-size:1.4rem}a{text-decoration:none;color:inherit}.container{width:90%;max-width:1200px;margin:0 auto;padding:2rem 0}.btn{display:inline-block;padding:12px 24px;margin:10px;background:transparent;color:white;border:2px solid;border-radius:6px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;cursor:pointer}.neon-blue{border-color:var(--neon-blue);color:var(--neon-blue);box-shadow:0 0 10px rgba(0,224,255,.5)}.neon-blue:hover{background:var(--neon-blue);color:var(--bg);box-shadow:0 0 20px var(--neon-blue)}.neon-pink{border-color:var(--neon-pink);color:var(--neon-pink);box-shadow:0 0 10px rgba(255,0,127,.5)}.neon-pink:hover{background:var(--neon-pink);color:white;box-shadow:0 0 20px var(--neon-pink)}.navbar{position:fixed;top:0;width:100%;background:rgba(11,15,25,.95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;border-bottom:1px solid var(--neon-blue)}.navbar .container{display:flex;justify-content:space-between;align-items:center}.logo{font-family:'Orbitron',sans-serif;font-size:1.5rem;color:var(--neon-blue);text-shadow:0 0 10px var(--neon-blue)}nav a{color:var(--text);margin-left:1.5rem;font-weight:500;transition:color .3s}nav a:hover{color:var(--neon-blue)}.hero{height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#0a0e17,#121826)}.hero::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle,transparent 40%,rgba(11,15,25,.9)100%)}.hero-content{text-align:center;z-index:2;max-width:800px;padding:0 1rem}.slogan{font-size:1.8rem;color:var(--neon-pink);margin-bottom:.5rem}.sub-slogan{font-size:1.2rem;color:var(--neon-blue);margin-bottom:2rem}.section{padding:4rem 0}.cards-grid,.social-cards,.process-cards,.events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:2rem 0}.card,.social-card,.process-card,.event-card{background:var(--card-bg);padding:1.5rem;border-radius:12px;text-align:center;transition:transform .3s,box-shadow .3s;border:1px solid transparent}.card:hover,.social-card:hover,.process-card:hover,.event-card:hover{transform:translateY(-5px);box-shadow:0 0 15px rgba(0,224,255,.3);border-color:var(--neon-blue)}.icon{font-size:2.5rem;margin-bottom:1rem}.infographic{display:flex;justify-content:center;gap:2rem;margin-top:2rem;font-weight:700;color:var(--neon-pink)}.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0}.menu-item ul{list-style:none;text-align:left;padding:0}.loyalty{text-align:center;color:var(--neon-pink);font-weight:700;margin-top:1.5rem}.courses-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem 0}.course{background:var(--card-bg);padding:1rem;border-radius:8px;text-align:center}.contact-info{text-align:center;margin-bottom:2rem}.social-links a{color:var(--neon-blue);margin:0 10px}.contact-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}.contact-form input,.contact-form select,.contact-form button{padding:12px;border-radius:6px;border:1px solid #444;background:var(--card-bg);color:white;font-size:1rem}.map-placeholder{margin-top:2rem;text-align:center;color:#aaa}footer{background:#090d15;padding:2rem 0;text-align:center;border-top:1px solid var(--neon-blue)}.footer-links a{color:var(--neon-blue);margin:0 10px}@media(max-width:768px){.navbar .container{flex-direction:column}nav{margin-top:1rem;display:flex;flex-wrap:wrap;justify-content:center}nav a{margin:.5rem}.hero h1{font-size:2.5rem}.slogan{font-size:1.4rem}.infographic{flex-direction:column;align-items:center}}.fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.fade-in.visible{opacity:1;transform:translateY(0)}@font-face{font-family:Orbitron;src:url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap)}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"></head><body><header class="navbar"><div class="container"><div class="logo">CyberTech Hub</div><nav><a href="#home">Главная</a><a href="#about">О проекте</a><a href="#innovation">Инновации</a><a href="#social">Сообщество</a><a href="#coffee">Кофейня</a><a href="#courses">Курсы</a><a href="#events">События</a><a href="#contact">Контакты</a></nav></div></header><section id="home" class="hero"><div class="hero-content"><h1>CyberTech Hub</h1><p class="slogan">Играй. Учись. Развивайся.</p><p class="sub-slogan">Создаём IT-поколение.</p><div class="hero-buttons"><a href="#contact" class="btn neon-blue">Записаться</a><a href="#about" class="btn neon-pink">Узнать больше</a></div></div></section><section id="about" class="section fade-in"><div class="container"><h2>О проекте</h2><p>Инновационное пространство «3 в 1»: игровая зона, IT-обучение и уютная кофейня под одной крышей.</p><div class="cards-grid"><div class="card"><div class="icon">🎮</div><h3>Игровая зона</h3><p>Современные ПК, VR и турниры каждый месяц.</p></div><div class="card"><div class="icon">💻</div><h3>IT-курсы</h3><p>Python, кибербезопасность, 3D-дизайн и языки.</p></div><div class="card"><div class="icon">☕</div><h3>Кофейня</h3><p>Свежий кофе, десерты и комбо-наборы для студентов.</p></div></div><a href="#courses" class="btn neon-blue">Курсы</a></div></section><section id="innovation" class="section fade-in"><div class="container"><h2>Инновационный реинжиниринг</h2><div class="features"><div class="feature"><h3>Онлайн-запись и CRM</h3><p>Автоматизированная система бронирования и учёта клиентов.</p></div><div class="feature"><h3>VR-обучение</h3><p>Погружение в IT-среду через виртуальную реальность.</p></div><div class="feature"><h3>Смарт-мониторинг</h3><p>Отслеживание загрузки зон и качества сервиса в реальном времени.</p></div></div><div class="infographic"><div>+25% эффективность</div><div>+40% скорость обслуживания</div></div></div></section><section id="social" class="section fade-in"><div class="container"><h2>Социальный реинжиниринг</h2><div class="social-cards"><div class="social-card"><h3>Командная культура</h3><p>Сотрудники — часть сообщества, а не просто персонал.</p></div><div class="social-card"><h3>Мотивация персонала</h3><p>Обучение, бонусы и участие в IT-проектах.</p></div><div class="social-card"><h3>Сообщество игроков и студентов</h3><p>Мероприятия, хакатоны и турниры объединяют всех.</p></div></div></div></section><section id="process" class="section fade-in"><div class="container"><h2>Оптимизация процессов</h2><div class="process-cards"><div class="process-card"><h3>Lean</h3><p>Снижение потерь и оптимизация ресурсов.</p></div><div class="process-card"><h3>Kaizen</h3><p>Постоянные улучшения на всех уровнях.</p></div><div class="process-card"><h3>BPM</h3><p>Аналитика бизнес-процессов и автоматизация.</p></div></div></div></section><section id="coffee" class="section fade-in"><div class="container"><h2>Кофейня</h2><p>Отдыхайте с чашкой кофе после занятий или игры.</p><div class="menu"><div class="menu-item"><h3>Кофе</h3><ul><li>Эспрессо — 80 сом</li><li>Латте — 120 сом</li><li>Капучино — 110 сом</li></ul></div><div class="menu-item"><h3>Десерты</h3><ul><li>Чизкейк — 150 сом</li><li>Брауни — 100 сом</li></ul></div><div class="menu-item"><h3>Комбо</h3><ul><li>Студенческое — 200 сом (кофе + десерт)</li></ul></div></div><p class="loyalty">🎓 Скидка 10% студентам при предъявлении ID!</p></div></section><section id="courses" class="section fade-in"><div class="container"><h2>Курсы</h2><div class="courses-list"><div class="course">Python для начинающих</div><div class="course">Продвинутая кибербезопасность</div><div class="course">3D-моделирование в Blender</div><div class="course">Английский для IT-специалистов</div><div class="course">Основы VR-разработки</div></div><a href="#contact" class="btn neon-pink">Записаться на курс</a></div></section><section id="events" class="section fade-in"><div class="container"><h2>События и турниры</h2><div class="events-grid"><div class="event-card"><h3>Кибертурнир по CS2</h3><p>📅 15 октября 2025</p></div><div class="event-card"><h3>Хакатон «Green Code»</h3><p>📅 22 октября 2025</p></div><div class="event-card"><h3>Мастер-класс по Blender</h3><p>📅 28 октября 2025</p></div></div></div></section><section id="contact" class="section fade-in"><div class="container"><h2>Контакты</h2><div class="contact-info"><p>📍 Ош, центр</p><p>📞 +996 555 123 456</p><p>✉️ hello@cybertechhub.kg</p><div class="social-links"><a href="https://t.me/cybertechhub" target="_blank">Telegram</a><a href="https://instagram.com/cybertechhub" target="_blank">Instagram</a></div></div><form id="contactForm" class="contact-form"><input type="text" id="name" placeholder="Ваше имя" required><input type="tel" id="phone" placeholder="Телефон" required><select id="service" required><option value="">Выберите услугу</option><option value="game">Игровая зона</option><option value="course">IT-курсы</option><option value="coffee">Кофейня</option><option value="event">Событие</option></select><button type="submit" class="btn neon-blue">Отправить</button></form><div class="map-placeholder"><p>📍 Карта: Google Maps (встроена в продакшене)</p></div></div></section><footer><div class="container"><p>&copy; 2025 CyberTech Hub. Все права защищены.</p><div class="footer-links"><a href="#home">Главная</a><a href="#about">О проекте</a><a href="#contact">Контакты</a></div></div></footer><script>document.addEventListener("DOMContentLoaded",function(){const e=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add("visible")})},{threshold:.1});document.querySelectorAll(".fade-in").forEach(t=>{e.observe(t)});const t=document.getElementById("contactForm");t&&t.addEventListener("submit",function(e){e.preventDefault();const a=document.getElementById("name").value.trim(),n=document.getElementById("phone").value.trim(),o=document.getElementById("service").value;if(a&&n&&o&&/^\+?[\d\s\-\(\)]{10,}$/.test(n))alert("Спасибо! Мы свяжемся с вами в ближайшее время."),t.reset();else{alert("Пожалуйста, заполните все поля корректно.")}})})</script></body></html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CyberTech Hub — Играй. Учись. Развивайся.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0f19;
+  --text: #e0e0ff;
+  --neon-blue: #00e0ff;
+  --neon-pink: #ff007f;
+  --card-bg: #131a2a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background: transparent;
+  color: white;
+  border: 2px solid;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.neon-blue {
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.5);
+}
+.neon-blue:hover {
+  background: var(--neon-blue);
+  color: var(--bg);
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+.neon-pink {
+  border-color: var(--neon-pink);
+  color: var(--neon-pink);
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+.neon-pink:hover {
+  background: var(--neon-pink);
+  color: white;
+  box-shadow: 0 0 20px var(--neon-pink);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--neon-blue);
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--neon-blue);
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0e17, #121826);
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 40%, rgba(11, 15, 25, 0.9) 100%);
+}
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 20px var(--neon-blue);
+  margin-bottom: 1rem;
+}
+.slogan {
+  font-size: 1.8rem;
+  color: var(--neon-pink);
+  margin-bottom: 0.5rem;
+}
+.sub-slogan {
+  font-size: 1.2rem;
+  color: var(--neon-blue);
+  margin-bottom: 2rem;
+}
+.section {
+  padding: 4rem 0;
+}
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+}
+.cards-grid, .social-cards, .process-cards, .events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.card, .social-card, .process-card, .event-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid transparent;
+}
+.card:hover, .social-card:hover, .process-card:hover, .event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.3);
+  border-color: var(--neon-blue);
+}
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.infographic {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--neon-pink);
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.menu-item ul {
+  list-style: none;
+  text-align: left;
+}
+.loyalty {
+  text-align: center;
+  color: var(--neon-pink);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.course {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.social-links a {
+  color: var(--neon-blue);
+  margin: 0 10px;
+  text-decoration: none;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form button {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: var(--card-bg);
+  color: white;
+  font-size: 1rem;
+}
+.map-placeholder {
+  margin-top: 2rem;
+  text-align: center;
+  color: #aaa;
+}
+footer {
+  background: #090d15;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid var(--neon-blue);
+}
+.footer-links a {
+  color: var(--neon-blue);
+  margin: 0 10px;
+  text-decoration: none;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav a {
+    margin: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .slogan {
+    font-size: 1.4rem;
+  }
+  .infographic {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+<header class="navbar">
+<div class="container">
+<div class="logo">CyberTech Hub</div>
+<nav>
+<a href="#home">Главная</a>
+<a href="#about">О проекте</a>
+<a href="#innovation">Инновации</a>
+<a href="#social">Сообщество</a>
+<a href="#coffee">Кофейня</a>
+<a href="#courses">Курсы</a>
+<a href="#events">События</a>
+<a href="#contact">Контакты</a>
+</nav>
+</div>
+</header>
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>CyberTech Hub</h1>
+<p class="slogan">Играй. Учись. Развивайся.</p>
+<p class="sub-slogan">Создаём IT-поколение.</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn neon-blue">Записаться</a>
+<a href="#about" class="btn neon-pink">Узнать больше</a>
+</div>
+</div>
+<div class="hero-overlay"></div>
+</section>
+<section id="about" class="section fade-in">
+<div class="container">
+<h2>О проекте</h2>
+<p>Инновационное пространство «3 в 1»: игровая зона, IT-обучение и уютная кофейня под одной крышей.</p>
+<div class="cards-grid">
+<div class="card">
+<div class="icon">🎮</div>
+<h3>Игровая зона</h3>
+<p>Современные ПК, VR и турниры каждый месяц.</p>
+</div>
+<div class="card">
+<div class="icon">💻</div>
+<h3>IT-курсы</h3>
+<p>Python, кибербезопасность, 3D-дизайн и языки.</p>
+</div>
+<div class="card">
+<div class="icon">☕</div>
+<h3>Кофейня</h3>
+<p>Свежий кофе, десерты и комбо-наборы для студентов.</p>
+</div>
+</div>
+<a href="#courses" class="btn neon-blue">Курсы</a>
+</div>
+</section>
+<section id="innovation" class="section fade-in">
+<div class="container">
+<h2>Инновационный реинжиниринг</h2>
+<div class="features">
+<div class="feature">
+<h3>Онлайн-запись и CRM</h3>
+<p>Автоматизированная система бронирования и учёта клиентов.</p>
+</div>
+<div class="feature">
+<h3>VR-обучение</h3>
+<p>Погружение в IT-среду через виртуальную реальность.</p>
+</div>
+<div class="feature">
+<h3>Смарт-мониторинг</h3>
+<p>Отслеживание загрузки зон и качества сервиса в реальном времени.</p>
+</div>
+</div>
+<div class="infographic">
+<div>+25% эффективность</div>
+<div>+40% скорость обслуживания</div>
+</div>
+</div>
+</section>
+<section id="social" class="section fade-in">
+<div class="container">
+<h2>Социальный реинжиниринг</h2>
+<div class="social-cards">
+<div class="social-card">
+<h3>Командная культура</h3>
+<p>Сотрудники — часть сообщества, а не просто персонал.</p>
+</div>
+<div class="social-card">
+<h3>Мотивация персонала</h3>
+<p>Обучение, бонусы и участие в IT-проектах.</p>
+</div>
+<div class="social-card">
+<h3>Сообщество игроков и студентов</h3>
+<p>Мероприятия, хакатоны и турниры объединяют всех.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="process" class="section fade-in">
+<div class="container">
+<h2>Оптимизация процессов</h2>
+<div class="process-cards">
+<div class="process-card">
+<h3>Lean</h3>
+<p>Снижение потерь и оптимизация ресурсов.</p>
+</div>
+<div class="process-card">
+<h3>Kaizen</h3>
+<p>Постоянные улучшения на всех уровнях.</p>
+</div>
+<div class="process-card">
+<h3>BPM</h3>
+<p>Аналитика бизнес-процессов и автоматизация.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="coffee" class="section fade-in">
+<div class="container">
+<h2>Кофейня</h2>
+<p>Отдыхайте с чашкой кофе после занятий или игры.</p>
+<div class="menu">
+<div class="menu-item">
+<h3>Кофе</h3>
+<ul>
+<li>Эспрессо — 80 сом</li>
+<li>Латте — 120 сом</li>
+<li>Капучино — 110 сом</li>
+</ul>
+</div>
+<div class="menu-item">
+<h3>Десерты</h3>
+<ul>
+<li>Чизкейк — 150 сом</li>
+<li>Брауни — 100 сом</li>
+</ul>
+</div>
+<div class="menu-item">
+<h3>Комбо</h3>
+<ul>
+<li>Студенческое — 200 сом (кофе + десерт)</li>
+</ul>
+</div>
+</div>
+<p class="loyalty">🎓 Скидка 10% студентам при предъявлении ID!</p>
+</div>
+</section>
+<section id="courses" class="section fade-in">
+<div class="container">
+<h2>Курсы</h2>
+<div class="courses-list">
+<div class="course">Python для начинающих</div>
+<div class="course">Продвинутая кибербезопасность</div>
+<div class="course">3D-моделирование в Blender</div>
+<div class="course">Английский для IT-специалистов</div>
+<div class="course">Основы VR-разработки</div>
+</div>
+<a href="#contact" class="btn neon-pink">Записаться на курс</a>
+</div>
+</section>
+<section id="events" class="section fade-in">
+<div class="container">
+<h2>События и турниры</h2>
+<div class="events-grid">
+<div class="event-card">
+<h3>Кибертурнир по CS2</h3>
+<p>📅 15 октября 2025</p>
+</div>
+<div class="event-card">
+<h3>Хакатон «Green Code»</h3>
+<p>📅 22 октября 2025</p>
+</div>
+<div class="event-card">
+<h3>Мастер-класс по Blender</h3>
+<p>📅 28 октября 2025</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section fade-in">
+<div class="container">
+<h2>Контакты</h2>
+<div class="contact-info">
+<p>📍 Ош, центр</p>
+<p>📞 +996 555 123 456</p>
+<p>✉️ hello@cybertechhub.kg</p>
+<div class="social-links">
+<a href="https://t.me/cybertechhub" target="_blank">Telegram</a>
+<a href="https://instagram.com/cybertechhub" target="_blank">Instagram</a>
+</div>
+</div>
+<form id="contactForm" class="contact-form">
+<input type="text" id="name" placeholder="Ваше имя" required>
+<input type="tel" id="phone" placeholder="Телефон" required>
+<select id="service" required>
+<option value="">Выберите услугу</option>
+<option value="game">Игровая зона</option>
+<option value="course">IT-курсы</option>
+<option value="coffee">Кофейня</option>
+<option value="event">Событие</option>
+</select>
+<button type="submit" class="btn neon-blue">Отправить</button>
+</form>
+<div class="map-placeholder">
+<p>📍 Карта: Google Maps (встроена в продакшене)</p>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<p>&copy; 2025 CyberTech Hub. Все права защищены.</p>
+<div class="footer-links">
+<a href="#home">Главная</a>
+<a href="#about">О проекте</a>
+<a href="#contact">Контакты</a>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      if (name && phone && service) {
+        alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+        form.reset();
+      } else {
+        alert('Пожалуйста, заполните все поля.');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
