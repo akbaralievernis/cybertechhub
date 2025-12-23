@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTech Hub — Игровая зона × IT-курсы × Кофейня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-gamepad"></i> CyberTech Hub
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Главная</a>
+                <a href="#concept">Концепция</a>
+                <a href="#courses">Курсы</a>
+                <a href="#tournaments">Турниры</a>
+                <a href="#coffee">Кофейня</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">CyberTech Hub</h1>
+                <p class="hero-subtitle">Первое в Кыргызстане пространство «3 в 1»: игровая зона премиум-класса, IT-образование мирового уровня и уютная кофейня для сообщества.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="studentsCount">0</div>
+                        <div class="stat-label">Студентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="tournamentsCount">0</div>
+                        <div class="stat-label">Турниров</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="coursesCount">0</div>
+                        <div class="stat-label">Курсов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="winnersCount">0</div>
+                        <div class="stat-label">Победителей</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">
+                        <i class="fas fa-graduation-cap"></i> Выбрать курс
+                    </a>
+                    <a href="#tournaments" class="btn btn-accent">
+                        <i class="fas fa-trophy"></i> Присоединиться к турниру
+                    </a>
+                    <a href="#coffee" class="btn btn-secondary">
+                        <i class="fas fa-coffee"></i> Посмотреть меню
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="section" id="concept">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Уникальная концепция</h2>
+                <p class="section-subtitle">Три пространства, объединённые одной философией: технологичность, образование и комьюнити.</p>
+            </div>
+            
+            <div class="concept-cards">
+                <div class="concept-card gaming fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Игровая зона</h3>
+                    <p>Премиум игровые ПК, PlayStation 5, Xbox Series X и VR-зона. Еженедельные турниры с призовым фондом до 100,000 сом. Бесплатные напитки для участников.</p>
+                    <a href="#tournaments" class="btn btn-secondary" style="margin-top: 15px;">Смотреть турниры</a>
+                </div>
+                
+                <div class="concept-card education fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT-Образование</h3>
+                    <p>Современные курсы по программированию, кибербезопасности, дизайну и английскому языку. Практикующие преподаватели из IT-индустрии. Гарантированное трудоустройство.</p>
+                    <a href="#courses" class="btn btn-primary" style="margin-top: 15px;">Выбрать курс</a>
+                </div>
+                
+                <div class="concept-card coffee fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Кофейня</h3>
+                    <p>Спешелти кофе, авторские напитки и свежая выпеска. Уютная атмосфера для работы, учебы и отдыха. Скидки 20% для студентов и участников турниров.</p>
+                    <a href="#coffee" class="btn btn-accent" style="margin-top: 15px;">Посмотреть меню</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">IT-Курсы</h2>
+                <p class="section-subtitle">Современные образовательные программы с гарантией трудоустройства. Победители турниров учатся бесплатно!</p>
+            </div>
+            
+            <div class="courses-filter">
+                <button class="filter-btn active" data-filter="all">Все курсы</button>
+                <button class="filter-btn" data-filter="programming">Программирование</button>
+                <button class="filter-btn" data-filter="design">Дизайн</button>
+                <button class="filter-btn" data-filter="language">Английский</button>
+                <button class="filter-btn" data-filter="free">Бесплатные</button>
+            </div>
+            
+            <div class="courses-grid" id="coursesContainer">
+                <!-- Courses will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section class="section" id="tournaments">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Киберспортивные турниры</h2>
+                <p class="section-subtitle">Еженедельные соревнования с денежными призами. Победители получают 100% скидку на любой IT-курс!</p>
+            </div>
+            
+            <div class="tournaments-grid" id="tournamentsContainer">
+                <!-- Tournaments will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Shop Section -->
+    <section class="section" id="coffee">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Кофейня</h2>
+                <p class="section-subtitle">Отдохните с чашкой премиального кофе после интенсивной игры или учебы. Скидка 20% для студентов.</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="filter-btn active" data-category="all">Всё меню</button>
+                <button class="filter-btn" data-category="coffee">Кофе</button>
+                <button class="filter-btn" data-category="tea">Чай</button>
+                <button class="filter-btn" data-category="desserts">Десерты</button>
+                <button class="filter-btn" data-category="combos">Комбо</button>
+            </div>
+            
+            <div class="menu-grid" id="menuContainer">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Контакты</h2>
+                <p class="section-subtitle">Приходите к нам в гости, звоните или пишите. Мы всегда рады новым участникам нашего сообщества!</p>
+            </div>
+            
+            <div class="contact-info" style="text-align: center; margin-bottom: 50px;">
+                <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 40px;">
+                    <div>
+                        <h3 style="color: var(--accent-blue); margin-bottom: 10px;"><i class="fas fa-map-marker-alt"></i> Адрес</h3>
+                        <p>г. Ош, ул. Ленина, 123</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Центр города, рядом с парком</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-blue); margin-bottom: 10px;"><i class="fas fa-phone"></i> Телефон</h3>
+                        <p>+996 (555) 123-456</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Ежедневно с 9:00 до 23:00</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-blue); margin-bottom: 10px;"><i class="fas fa-envelope"></i> Email</h3>
+                        <p>hello@cybertechhub.kg</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Ответим в течение 24 часов</p>
+                    </div>
+                </div>
+                
+                <div class="footer-social" style="justify-content: center;">
+                    <a href="https://t.me/cybertechhub" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://instagram.com/cybertechhub" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/996555123456" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://discord.gg/cybertechhub" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>CyberTech Hub</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Первый в Кыргызстане технологический хаб, объединяющий гейминг, образование и кофейню в одном пространстве.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#concept">Концепция</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#tournaments">Турниры</a></li>
+                        <li><a href="#coffee">Кофейня</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Курсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses" data-filter="programming">Программирование</a></li>
+                        <li><a href="#courses" data-filter="design">Дизайн и 3D</a></li>
+                        <li><a href="#courses" data-filter="cybersecurity">Кибербезопасность</a></li>
+                        <li><a href="#courses" data-filter="language">Английский для IT</a></li>
+                        <li><a href="#courses" data-filter="free">Бесплатные курсы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--accent-blue);"></i> г. Ош, ул. Ленина, 123</li>
+                        <li><i class="fas fa-phone" style="margin-right: 8px; color: var(--accent-blue);"></i> +996 (555) 123-456</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 8px; color: var(--accent-blue);"></i> hello@cybertechhub.kg</li>
+                        <li><i class="fas fa-clock" style="margin-right: 8px; color: var(--accent-blue);"></i> Ежедневно 9:00-23:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberTech Hub. Все права защищены.</p>
+                <p style="margin-top: 5px; font-size: 0.8rem;">Создаём IT-поколение Кыргызстана</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Ваша корзина</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Ваша корзина пуста</p>
+                <p style="font-size: 0.9rem; margin-top: 10px;">Добавьте курсы, турниры или продукты из меню</p>
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span class="cart-total-amount">0 сом</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" id="checkoutBtn">
+                <i class="fas fa-credit-card"></i> Перейти к оплате
+            </button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <div class="payment-header">
+                <h3><i class="fas fa-credit-card"></i> Оформление заказа</h3>
+            </div>
+            <div class="payment-body">
+                <div class="payment-methods">
+                    <div class="payment-method active" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        <p>Банковская карта</p>
+                    </div>
+                    <div class="payment-method" data-method="cash">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p>Наличные</p>
+                    </div>
+                </div>
+                
+                <div class="payment-form" id="cardForm">
+                    <div class="form-group">
+                        <label for="cardNumber">Номер карты</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cardExpiry">Срок действия</label>
+                            <input type="text" id="cardExpiry" placeholder="ММ/ГГ" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardCvc">CVC</label>
+                            <input type="text" id="cardCvc" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardName">Имя владельца</label>
+                        <input type="text" id="cardName" placeholder="IVAN IVANOV">
+                    </div>
+                </div>
+                
+                <div class="payment-form" id="cashForm" style="display: none;">
+                    <div class="form-group">
+                        <p style="color: var(--text-secondary); text-align: center; padding: 20px 0;">Оплата наличными при посещении CyberTech Hub. После оформления заказа с вами свяжется менеджер для подтверждения.</p>
+                    </div>
+                </div>
+                
+                <div class="cart-total" style="margin-bottom: 20px;">
+                    <span>К оплате:</span>
+                    <span class="cart-total-amount" id="paymentTotal">0 сом</span>
+                </div>
+                
+                <button class="btn btn-primary" style="width: 100%;" id="confirmPayment">
+                    <i class="fas fa-check-circle"></i> Подтвердить заказ
+                </button>
+                
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 15px;" id="cancelPayment">
+                    <i class="fas fa-times"></i> Отмена
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div id="successToast" style="position: fixed; bottom: 20px; right: 20px; background: var(--accent-green); color: var(--bg-primary); padding: 15px 25px; border-radius: var(--border-radius); font-weight: 600; box-shadow: var(--shadow); z-index: 9999; transform: translateY(100px); opacity: 0; transition: var(--transition);">
+        <i class="fas fa-check-circle"></i> Товар добавлен в корзину!
+    </div>
+
+    <script src="app.js">
+       
+    </script>
+</body>
+</html>
